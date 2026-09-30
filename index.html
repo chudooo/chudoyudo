@@ -9,6 +9,7 @@
             box-sizing: border-box;
             margin: 0;
             padding: 0;
+            -webkit-tap-highlight-color: transparent;
         }
 
         body {
@@ -21,6 +22,7 @@
             color: #ffffff;
             user-select: none;
             -webkit-user-select: none;
+            touch-action: manipulation;
         }
 
         .container {
@@ -35,6 +37,7 @@
             cursor: pointer;
             transition: transform 0.1s ease;
             margin-bottom: 20px;
+            outline: none;
         }
 
         .gift:active {
