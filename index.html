@@ -68,7 +68,12 @@
                 counterElement.textContent = clicksLeft;
 
                 if (clicksLeft === 0) {
-                    window.location.href = TELEGRAM_LINK;
+                    giftElement.textContent = "🎉"; 
+                    counterElement.textContent = "Открыто!";
+            
+                    setTimeout(() => {
+                        window.location.href = TELEGRAM_LINK;
+                    }, 300);
                 }
             }
         });
