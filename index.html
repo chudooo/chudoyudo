@@ -19,7 +19,7 @@
             background-color: #0f172a;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             color: #ffffff;
-            user-select: none; /* Запрет выделения текста */
+            user-select: none;
             -webkit-user-select: none;
         }
 
@@ -56,8 +56,7 @@
     </div>
 
     <script>
-        // Замените эту ссылку на вашу ссылку-приглашение в Telegram
-        const TELEGRAM_LINK = "https://t.me/+A5_ZJ8Nds7YwYjJi";
+        const TELEGRAM_LINK = const TELEGRAM_LINK = "tg://join?invite=A5_ZJ8Nds7YwYjJi";
 
         let clicksLeft = 100;
         const giftElement = document.getElementById("gift");
@@ -69,7 +68,6 @@
                 counterElement.textContent = clicksLeft;
 
                 if (clicksLeft === 0) {
-                    // Перенаправление на Telegram-канал при достижении 0
                     window.location.href = TELEGRAM_LINK;
                 }
             }
